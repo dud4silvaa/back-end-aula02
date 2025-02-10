@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-image: url('calc.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    text-align: left;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgba(23, 21, 101, 0.5);
+    box-shadow: 0px 0px 5px rgba(23, 21, 101, 0.5);
+}
+
+button {
+    background: rgba(23, 21, 101, 0.5);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(23, 21, 101, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: rgba(23, 21, 101, 0.5);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+td {
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+td button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+td button:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

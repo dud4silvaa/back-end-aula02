@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controle de gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de gastos</h1>
+    </header>
+    <main>
+        <section>
+            <h2></h2>
+            <form id="analise">
+                <label for="data">Data</label>
+                <input type="date" name="data" required>
+                <input type="number" name="valor" placeholder="Valor" required>
+                <input type="text" name="descricao" placeholder="Descrição" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Dados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                        <th>deletar</th>
+                    </tr>
+                </thead>
+                <tbody id="gastos">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="msg">By João, Duda & Milena</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
